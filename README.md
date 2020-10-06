@@ -8,7 +8,7 @@ Repositório de estudos da **Maratona Dev**, **Stefanini Brasil**.
 * **CSS**
 * **Angular JS**
 
-## Tutoriais
+## Semana 1
 
 **#1 Tutorial 001**
 

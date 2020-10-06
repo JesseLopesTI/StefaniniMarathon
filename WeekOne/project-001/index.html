@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html ng-app="app" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 001 - Scoreboard</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./script/main.js"></script>
+  </head>
+
+  <body ng-controller="control">
+    <div class="main-container">
+      <div class="primary-time-container">
+        <div class="main-title-container">
+          <h1 class="main-title">Scoreboard</h1>
+        </div>
+
+        <div class="secondary-time-container">
+          <h2 class="secondary-title">Time</h2>
+          <p class="minutes"></p>
+        </div>
+      </div>
+
+      <div class="grid-layout-container">
+        <div class="grid-layout">
+          <div class="home-container">
+            <div class="counter-one">
+              <p class="number">{{counterOne}}</p>
+            </div>
+
+            <div class="control-one">
+              <i ng-click="counterOne = counterOne + 1" class="fas fa-plus-circle"></i>
+              <i ng-click="counterOne = counterOne - 1" class="fas fa-minus-circle"></i>
+            </div>
+          </div>
+
+          <div class="away-container">
+            <div class="counter-two">
+              <p class="number">{{counterTwo}}</p>
+            </div>
+
+            <div class="control-two">
+              <i ng-click="counterTwo = counterTwo + 1" class="fas fa-plus-circle"></i>
+              <i ng-click="counterTwo = counterTwo - 1" class="fas fa-minus-circle"></i>
+            </div>
+          </div>
+
+
+          <div class="home-team">
+            <h3 class="tertiary-title">{{homeTeam}}</h3>
+            <input type="text" ng-model="homeTeam" placeholder="Home">
+          </div>
+
+          <div class="away-team">
+            <h3 class="tertiary-title">{{awayTeam}}</h3>
+            <input type="text" ng-model="awayTeam" placeholder="Away">
+          </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html ng-app="checkListApp" lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 002 - Check List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./script/check-list.js"></script>
+  </head>
+
+  <body>
+    <div class="check-list-container">
+      <header>
+        <h1 class="title">Check List</h1>
+      </header>
+
+      <main ng-controller="checkListController">
+          <!-- <form ng-submit="vm.addTasks()">
+            <div class="form group">
+              <input class="input-item" type="text" ng-model="vm.taskText" placeholder="Insert an item in the list">
+
+              <button class="plus-button">
+                +
+              </button>
+            </div>
+          </form>
+
+          <h2>Items to do:</h2> -->
+
+          <ul>
+            <li ng-repeat="task in tasks">
+              <label class="checkbox">
+                <input type="checkbox" ng-model="task.done">
+                <span class="done-{{task.done}}">{{task.text}}</span>
+              </label>
+            </li>
+          </ul>
+          <div class="mb-2">
+            items performed: 1/2 (<a href="" ng-click="alert()">arquive</a>)
+          </div>
+        </div>
+      </main>
+  </body>
+
+</html>

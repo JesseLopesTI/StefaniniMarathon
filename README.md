@@ -18,6 +18,6 @@ Tutorial apresentado no primeiro dia da **Semana Angular JS**.
 
 **#2 Project 001**
 
-Projeto desenvolvido a partir do conhecimento adquirido no primeiro dia da **Semana Angular JS** e também, através de tutoriais e cursos, no **YouTube**.
+Projeto desenvolvido a partir do conhecimento adquirido no primeiro dia da **Semana Angular JS**.
 
-**Resultado (em andamento):** [project-001](?)
+**Resultado (em andamento):** [project-001](https://github.com/JesseLopesTI/StefaniniMarathon/tree/master/WeekOne/project-001)

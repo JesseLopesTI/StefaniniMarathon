@@ -10,13 +10,7 @@ Repositório de estudos da **Maratona Dev**, **Stefanini Brasil**.
 
 ## Semana 1
 
-**#1 Tutorial 001**
-
-Tutorial apresentado no primeiro dia da **Semana Angular JS**.
-
-**Resultado:** [tutorial-001](https://github.com/JesseLopesTI/StefaniniMarathon/tree/master/WeekOne/tutorial-001)
-
-**#2 Project 001**
+**#1 Project 001**
 
 Projeto desenvolvido a partir do conhecimento adquirido no primeiro dia da **Semana Angular JS**.
 

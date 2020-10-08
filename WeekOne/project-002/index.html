@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html ng-app="checkListApp" lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 002 - Check List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./script/check-list.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+
+  <body>
+    <div class="check-list-container">
+      <header>
+        <h1 class="title">Check List</h1>
+      </header>
+
+      <main ng-controller="checkListController as vm">
+        <form ng-submit="vm.addTask()">
+          <div class="form group">
+            <input class="input-item" type="text" ng-model="vm.taskText" placeholder="Add new item to list">
+
+            <button class="plus-button">
+              +
+            </button>
+          </div>
+        </form>
+
+        <h2>List items:</h2>
+
+        <ul>
+          <li ng-repeat="task in vm.tasks">
+            <label class="checkbox">
+              <input type="checkbox" ng-model="task.done">
+              <span class="done-{{task.done}}">{{task.text}}</span>
+            </label>
+          </li>
+        </ul>
+        <div class="mb-2">
+          {{vm.left()}} of {{vm.tasks.length}} tasks left. (<a href="" ng-click="vm.archive()">arquive</a>)
+        </div>
+      </main>
+  </body>
+
+</html>

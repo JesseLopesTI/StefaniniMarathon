@@ -12,8 +12,8 @@
       var vm = this;
 
       vm.tasks = [
-        { text: 'Study AngularJS', done: true },
-        { text: 'Study English and Spanish', done: false }
+        // { text: 'Study AngularJS', done: true },
+        // { text: 'Study English and Spanish', done: false }
       ];
 
       vm.left = left;

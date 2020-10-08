@@ -12,12 +12,12 @@ Repositório de estudos da **Maratona Dev**, **Stefanini Brasil**.
 
 **#1 Project 001**
 
-Projeto desenvolvido a partir do conhecimento adquirido no primeiro dia da **Semana Angular JS**.
+Projeto Scoreboard, desenvolvido a partir do conhecimento adquirido no primeiro dia da **Semana Angular JS**.
 
 **Resultado:** [project-001](https://github.com/JesseLopesTI/StefaniniMarathon/tree/master/WeekOne/project-001)
 
 **#2 Project 002**
 
-Projeto desenvolvido a partir do conhecimento adquirido no segundo dia da **Semana Angular JS**.
+Projeto Check List, desenvolvido a partir do conhecimento adquirido no segundo dia da **Semana Angular JS**.
 
 **Resultado (em andamento):** [project-002](https://github.com/JesseLopesTI/StefaniniMarathon/tree/master/WeekOne/project-002)

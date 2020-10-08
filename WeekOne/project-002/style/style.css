@@ -1,0 +1,152 @@
+:root {
+  --white-color: #fff;
+  --light-grey-color: #c5c4c4;
+  --dark-grey-color: #707070;
+  --light-green-color: #1faa28;
+  --dark-green-color: #16801d;
+  --dark-red-color: #ba0d0d;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.check-list-container {
+  width: 50%;
+  height: 50%;
+  border: 1px solid var(--light-grey-color);
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.title {
+  color: var(--dark-grey-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.input-item {
+  width: 88.58%;
+  height: 2.5rem;
+  border: 1px solid var(--light-grey-color);
+  border-radius: 5px;
+  color: var(--light-grey-color);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.input-item:focus {
+  border: 1px solid var(--dark-grey-color);
+  color: var(--dark-grey-color);
+}
+
+.input-item::placeholder {
+  color: var(--light-grey-color);
+}
+
+.plus-button {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 5px;
+  background: var(--light-green-color);
+  color: var(--white-color);
+  padding: 0.8rem;
+  margin-left: 0.1rem;
+}
+
+.fa-plus {
+  font-size: 1rem;
+}
+
+.list-items-title {
+  margin: 1.5rem 0 1rem 0;
+  font-weight: normal;
+}
+
+.checkbox {
+  width: 100%;
+  border-bottom: 1px solid var(--light-grey-color);
+  padding: 0.5rem 0;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.item {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.item:before {
+  content: '';
+  background: var(--white-color);
+  border: 1px solid var(--light-grey-color);
+  border-radius: 5px;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: -2rem;
+  margin-top: 0.1rem;
+}
+
+.item:after {
+  content: url("../icon/check-solid.svg");
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .item:after {
+  transform: scale(1);
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: var(--light-grey-color);
+}
+
+.fa-trash {
+  margin-left: 25rem;
+}
+
+.archive {
+  margin-top: 2rem;
+  margin-left: 24.5rem;
+}
+
+.archive-link {
+  color: var(--dark-red-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.archive-link:hover {
+  text-decoration: underline;
+}

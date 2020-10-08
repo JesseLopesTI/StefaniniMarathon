@@ -35,10 +35,12 @@
 
           <ul>
             <li ng-repeat="task in vm.tasks">
-              <label class="checkbox">
-                <input type="checkbox" ng-model="task.done">
-                <span class="done-{{task.done}}">{{task.text}}</span>
-              </label>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="task.done">
+                  <span class="item done-{{task.done}}">{{task.text}}</span>
+                </label>
+              </div>
             </li>
           </ul>
           <div class="mb-2">

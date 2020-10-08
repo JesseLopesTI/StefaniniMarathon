@@ -14,40 +14,45 @@
   </head>
 
   <body>
-    <div class="check-list-container">
-      <header>
-        <h1 class="title">Check List</h1>
-      </header>
+    <div class="main-check-list-container">
+      <div class="secondary-check-list-container">
+        <header>
+          <h1 class="title">Check List</h1>
+        </header>
 
-      <main ng-controller="checkListController as vm">
-        <div class="main-container">
-          <form ng-submit="vm.addTask()">
-            <div class="form group">
-              <input class="input-item" type="text" ng-model="vm.taskText" placeholder="Add new item to list">
+        <main ng-controller="checkListController as vm">
+          <div class="main-container">
+            <form ng-submit="vm.addTask()">
+              <div class="form group">
+                <input class="input-item" type="text" ng-model="vm.taskText" placeholder="Add new item to list">
 
-              <button class="plus-button">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-          </form>
-
-          <h2 class="list-items-title">List items:</h2>
-
-          <ul>
-            <li ng-repeat="task in vm.tasks">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" ng-model="task.done">
-                  <span class="item done-{{task.done}}">{{task.text}}</span>
-                </label>
+                <button class="plus-button">
+                  <i class="fas fa-plus"></i>
+                </button>
               </div>
-            </li>
-          </ul>
-          <div class="archive">
-            {{vm.left()}} of {{vm.tasks.length}} tasks left. (<a class="archive-link" href="" ng-click="vm.archive()">archive</a>)
+            </form>
+
+            <h2 class="list-items-title">List items:</h2>
+
+            <ul class="list-items-container">
+              <li ng-repeat="task in vm.tasks">
+                <div class="checkbox-container">
+                  <label>
+                    <input class="checkbox" type="checkbox" ng-model="task.done">
+                    <span class="item done-{{task.done}}">{{task.text}}</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <div class="archive-paragraph">
+              <p class="paragraph">
+                {{vm.left()}} of {{vm.tasks.length}} tasks left. (<a class="archive-link" href="" ng-click="vm.archive()">archive</a>)
+              </p>
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
+    </div>
   </body>
 
 </html>
